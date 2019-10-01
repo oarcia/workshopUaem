@@ -1,3 +1,10 @@
 const app = require('./app');
 
-app.listen(3000, () => console.log('server on port 3000'));
+//esta parte es un callback arreglaremos el codigo para dejarlo 
+//con async await
+
+async function main(){
+   await app.listen(3000);
+   console.log('server is runing')
+}
+main();
